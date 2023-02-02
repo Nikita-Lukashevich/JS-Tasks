@@ -8,27 +8,30 @@
 
 // *2 вариант решения: с помощью логического ИЛИ в условии.
 
-let number = prompt('Введите число number: ');
-let min = prompt('Введите число min: ');
-let max = prompt('Введите число max: ');
+// let number = +prompt('Введите число number: ');
+// let min = +prompt('Введите число min: ');
+// let max = +prompt('Введите число max: ');
 
-function result(number, min, max){
-    if (number >= min && number <= max){
-        console.log(`Да, number входит в диапозон`);
-    }else{
-        console.log(`Нет, number не входит в диапозон`);
-    }
-}
-
-// function resulta(number, min, max) {
-//     if (number >= min || number <= max) {
+// function result(number, min, max){
+//     if (number >= min && number <= max){
 //         console.log(`Да, number входит в диапозон`);
 //     }else{
 //         console.log(`Нет, number не входит в диапозон`);
 //     }
-// }
+// };
 
-result();
+// result();
+
+// function resulta(number, min, max) {
+//     if (number < min || number > max) {
+//         console.log(`Нет, number не входит в диапозон`);
+//     }else{
+//         console.log(`Да, number входит в диапозон`);
+//     }
+// };
+
+// resulta();
+
 
 
 
@@ -46,14 +49,32 @@ result();
 
 // Ваше решение должно работать для любого количества ключей в объекте!
 
+// const engineers = {
+// Den: 1000,
+// Matt: 5000,
+// Steve: 2000,
+// }
+
+// for (let key in engineers){
+//     console.log(`Заработная плата ${key} составляет ${engineers[key]} рублей.`)
+// }
+
+
+
 
 // Задание 3
-
-
 
 // Создать массив из 5 элементов.
 
 // Используя цикл for, вывести каждый второй элемент массива в консоль.
+
+// let array = [1, 2, 3, 4, 5];
+
+// for(let i = 1; i < array.length; i += 2){
+//     console.log(array[i]);
+// }
+
+
 
 
 // Задание 4
@@ -66,6 +87,15 @@ result();
 // Индексу 0 соответствует число 42
 // Индексу 1 соответствует число 65
 // и т.д.
+
+// let numbers = [42, 65, 49, 68, 56, 47, 70, 42, 51, 35, 58, 63, 40, 70];
+
+// for (let i = 0; i < numbers.length; i++){
+//     console.log(`Индексу ${i} соответствует число ${numbers[i]}`);
+// }
+
+
+
 
 // Задание 5
 
@@ -85,6 +115,24 @@ result();
 
 // Решение должно работать для массива любой длины.
 
+// let questions = [{
+//     question: "What's the currency of the USA?",
+//     choices: ["US dollar", "Ruble", "Horses", "Gold"],
+//     corAnswer: 0
+// }, {
+//     question: "Where was the American Declaration of Independence signed?",
+//     choices: ["Philadelphia", "At the bottom", "Frankie's Pub", "China"],
+//     corAnswer: 0
+// }];
+
+// for (i = 0; i < questions.length; i++){
+//     questions[i].userAnswer = null;
+// }
+
+// console.log(questions);
+
+
+
 
 // Задание 6
 
@@ -102,3 +150,34 @@ result();
 // Подсказка: как и в случае с суммой, здесь сначала нужно объявить переменную (например, max), записать в нее первый элемент массива, а затем уже в цикле искать максимальное значение.
 
 // 4) Определить и вывести в консоль индекс максимального числа массива (или индексы, если число встречается более одного раза). Само максимальное число мы уже нашли в прошлой части задачи, повторно его искать не нужно.
+
+// let numbers = [42, 65, 49, 68, 56, 47, 70, 42, 51, 35, 58, 63, 40, 70];
+// let sum = 0;
+// let summa = 0;
+// let max = 0;
+// let inDex = [];
+
+// for (i = 0; i < numbers.length; i++){
+//     sum += numbers[i];
+//     if (numbers[i] % 2 === 0){
+//         summa += numbers[i];
+//     }else{
+//         continue;
+//     };
+//     if (numbers[i] >= max){
+//         max = numbers[i];
+//     }else{
+//         continue;
+//     };
+// }
+
+// for (i = 0; i < numbers.length; i++){
+//     if (numbers[i] === max){
+//         inDex.push([i]);
+//     }
+// }
+
+// console.log(`Сумма элементов равна: ${sum}`);
+// console.log(`Сумма четных элементов равна: ${summa}`);
+// console.log(`Максимальное число массива равно: ${max}`);
+// console.log(`Индекс максимального числа в массиве равен: ${inDex}`);
