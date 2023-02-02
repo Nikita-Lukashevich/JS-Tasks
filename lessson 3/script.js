@@ -8,26 +8,30 @@
 
 // *2 вариант решения: с помощью логического ИЛИ в условии.
 
-// let number = +prompt('Введите число number: ');
-// let min = +prompt('Введите число min: ');
-// let max = +prompt('Введите число max: ');
 
-// function result(number, min, max){
-//     if (number >= min && number <= max){
+
+// function result(){
+//     let num = +prompt('Введите число number: ');
+//     let mi = +prompt('Введите число min: ');
+//     let ma = +prompt('Введите число max: ');
+//     if (num >= mi && num <= ma){
 //         console.log(`Да, number входит в диапозон`);
 //     }else{
 //         console.log(`Нет, number не входит в диапозон`);
-//     }
+//     };
 // };
 
 // result();
 
 // function resulta(number, min, max) {
+//     let number = +prompt('Введите число number: ');
+//     let min = +prompt('Введите число min: ');
+//     let max = +prompt('Введите число max: ');
 //     if (number < min || number > max) {
 //         console.log(`Нет, number не входит в диапозон`);
 //     }else{
 //         console.log(`Да, number входит в диапозон`);
-//     }
+//     };
 // };
 
 // resulta();
@@ -53,11 +57,11 @@
 // Den: 1000,
 // Matt: 5000,
 // Steve: 2000,
-// }
+// };
 
 // for (let key in engineers){
 //     console.log(`Заработная плата ${key} составляет ${engineers[key]} рублей.`)
-// }
+// };
 
 
 
@@ -72,7 +76,7 @@
 
 // for(let i = 1; i < array.length; i += 2){
 //     console.log(array[i]);
-// }
+// };
 
 
 
@@ -92,7 +96,7 @@
 
 // for (let i = 0; i < numbers.length; i++){
 //     console.log(`Индексу ${i} соответствует число ${numbers[i]}`);
-// }
+// };
 
 
 
@@ -127,7 +131,7 @@
 
 // for (i = 0; i < questions.length; i++){
 //     questions[i].userAnswer = null;
-// }
+// };
 
 // console.log(questions);
 
@@ -161,23 +165,114 @@
 //     sum += numbers[i];
 //     if (numbers[i] % 2 === 0){
 //         summa += numbers[i];
-//     }else{
-//         continue;
 //     };
 //     if (numbers[i] >= max){
 //         max = numbers[i];
-//     }else{
-//         continue;
 //     };
-// }
+// };
 
 // for (i = 0; i < numbers.length; i++){
 //     if (numbers[i] === max){
 //         inDex.push([i]);
-//     }
-// }
+//     };
+// };
 
 // console.log(`Сумма элементов равна: ${sum}`);
 // console.log(`Сумма четных элементов равна: ${summa}`);
 // console.log(`Максимальное число массива равно: ${max}`);
 // console.log(`Индекс максимального числа в массиве равен: ${inDex}`);
+
+
+
+
+
+// Задание 7
+
+// Определить массив let arr = [5, 4, 3, -3, -10, -1, 8, -20, 0]
+
+// Создать новый массив из элементов массива arr, но в новом должны содержаться только положительные элементы.
+
+// Подсказка. Изначально нужно объявить пустой массив-хранилище (например, let newArr = []). Затем пройтись в цикле по массиву arr, и в каждой итерации, если элемент положительный, добавлять его в массив newArr.
+
+// let arr = [5, 4, 3, -3, -10, -1, 8, -20, 0];
+// let newArr = [];
+
+// for (i = 0; i < arr.length; i++){
+//     if (arr[i] >= 0){
+//         newArr.push(arr[i]);
+//     };
+// };
+
+// console.log(newArr);
+
+
+
+
+// Задание 8
+
+// Написать функцию, которая принимает массив (array) и число (num).
+
+// Функция должна создать новый массив из элементов массива array, и в этом новом массиве должны содержаться только элементы, больше и равные (>=) значению num.
+
+// function box(array, num) {
+//     for (i = 1; i < array.length; i++){
+//         if (i >= num){
+//             let newArray = [];
+//             newArray += array[i];
+//             console.log(newArray);
+//         };
+//     };
+// };
+// box();
+
+
+
+
+// Задание 9
+
+// Существует массив пользователей, например:
+
+// const users = [{name: 'Vasya', age: 23}, {name: 'Olya', age: 12}, {name: 'Anna', age: 22}, {name: 'Alex', age: 18}, {name: 'Valery', age: 8}]
+
+// Пройти в цикле по массиву и вывести имена всех пользователей, возраст которых больше 15.
+
+// const users = [{name: 'Vasya', age: 23}, {name: 'Olya', age: 12}, {name: 'Anna', age: 22}, {name: 'Alex', age: 18}, {name: 'Valery', age: 8}];
+
+// for (i = 0; i < users.length; i++){
+//     if (users[i].age > 15){
+//         console.log(users[i].name);
+//     };
+// };
+
+
+
+
+// Задание 10*
+
+// Задать массив слов. Например:
+
+// let vegetables = ["морковь", "баклажан", "репа", "топинамбур"];
+
+// 1) В цикле сформировать массив объектов с ключами word (само слово), length (длина слова):
+
+// [{word:'морковь', length: 7}, {word:'баклажан', length: 8} и т.п.]
+
+// Вывести этот массив в консоль.
+
+// Подсказка: длину строки можно определить с помощью метода .length. Например, для переменной let string = 'text' это будет string.length (результат - 4, т.к. слово text состоит из 4 символов)
+
+// 2) Пройтись по полученному массиву объектов и вывести в консоль строки вида "слово - длина_слова", например "картошка - 8"
+
+// let markaAuto = ['BMW', 'Audi', 'Volvo', 'Volkswagen'];
+// let newMarkAuto = [];
+
+// for (i = 0; i < markaAuto.length; i++){
+//     newMarkAuto.push({
+//         word: markaAuto[i],
+//         length: markaAuto[i].length
+//     });
+// };
+
+// for (i = 0; i < newMarkAuto.length; i++){
+//         console.log(`${newMarkAuto[i].word} - ${newMarkAuto[i].length}`);
+// };
