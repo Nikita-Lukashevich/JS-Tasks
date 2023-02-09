@@ -111,12 +111,12 @@
 //     let mas = [];
 //     for (let item of arr){
 //         if (mas.includes(item)){
-//             continue
-//         }else(
-//             mas.push(item)
-//         );
+//             continue;
+//         }else{
+//             mas.push(item);
+//         };
 //     };
 //     return mas;
 // };
 
-// console.log(unique(strings) );
+// console.log(unique(strings));
