@@ -71,3 +71,52 @@
 // 3. Извлеките название для чтения человеком, используя номер индекса точки с запятой в качестве контрольной точки и сохраните его в новой переменной.
 // 4. Объедините две новые переменные и строк
 
+// let stations = [
+//     'MAN675847583748sjt567654;Manchester Piccadilly',
+//     'GNF576746573fhdg4737dh4;Greenfield',
+//     'LIV5hg65hd737456236dch46dg4;Liverpool Lime Street',
+//     'SYB4f65hf75f736463;Stalybridge',
+//     'HUD5767ghtyfyr4536dh45dg45dg3;Huddersfield'
+// ];
+    
+// function nameStationForUser(mass) {
+//     for (i = 0; i < mass.length; i++){
+//         let b = mass[i].indexOf(';')
+//         console.log(`${mass[i].slice(0, 3)} : ${mass[i].slice(b + 1)}`);
+//     }
+// };
+
+// nameStationForUser(stations);
+
+
+
+
+// Задание 5
+
+// Напишите функцию unique(arr), которая принимает массив, а возвращает новый массив, содержащий только уникальные элементы arr.
+
+// Пример:
+
+// let strings = ["кришна", "кришна", "харе", "харе", "харе", "харе", "кришна", "кришна", ":-O"];
+
+// console.log(unique(strings) ); должен вывести "кришна, харе, :-O"
+
+// ПОДСКАЗКА
+
+// - создать новый массив
+
+// - обойти исходный массив, если элемент отсутствует в новом - добавлять его в новый. Таким образом в новый добавятся только уникальные.
+
+// function unique(arr) {
+//     let mas = [];
+//     for (let item of arr){
+//         if (mas.includes(item)){
+//             continue
+//         }else(
+//             mas.push(item)
+//         );
+//     };
+//     return mas;
+// };
+
+// console.log(unique(strings) );
