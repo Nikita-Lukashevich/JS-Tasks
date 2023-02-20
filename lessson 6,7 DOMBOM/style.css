@@ -1,0 +1,43 @@
+/* body{
+    position: relative;
+}
+
+#redSquare{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 150px;
+    height: 150px;
+    border: 2px solid rgb(255, 0, 0);
+} */
+
+/* .redCircle{
+    width: 50px;
+    height: 50px;
+    border: 2px solid rgb(255, 0, 0);
+    border-radius: 50%;
+} */
+
+.menu ul {
+    margin: 0;
+    list-style: none;
+    padding-left: 20px;
+    display: none;
+  }
+
+.menu p {
+    cursor: pointer;
+  }
+
+  .menu p::before {
+    content: '\2B9E';
+    color: green;
+  }
+
+  .menu.open p::before {
+    content: '\2B9F';
+  }
+
+  .menu.open ul {
+    display: block;
+  }
