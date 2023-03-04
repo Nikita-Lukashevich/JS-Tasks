@@ -1,1 +1,411 @@
-/*# sourceMappingURL=style.css.map */
+header .popup .popup-content form input:last-child, header .header-title .btn {
+  width: 220px;
+  height: 55px;
+  border: none;
+  background-color: rgb(190, 174, 130);
+  color: rgb(0, 0, 0);
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+header .popup .popup-content form input:hover:last-child, header .header-title .btn:hover {
+  color: rgb(255, 255, 255);
+}
+
+.portfolio .section-button button {
+  width: 220px;
+  height: 55px;
+  border: none;
+  background-color: rgb(0, 0, 0);
+  color: rgb(190, 174, 130);
+  border: 2px solid rgb(190, 174, 130);
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+.portfolio .section-button button:hover {
+  background-color: rgb(190, 174, 130);
+  color: rgb(0, 0, 0);
+}
+
+header {
+  background: url(../img/bg.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+header .header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+header .header-nav .logo:hover {
+  content: url(../img/logo_hover.svg);
+  cursor: pointer;
+}
+header .header-nav .header-link {
+  display: flex;
+}
+header .header-nav .header-link nav > ul {
+  display: flex;
+  width: 500px;
+  justify-content: space-around;
+}
+header .header-nav .header-link nav > ul li > a {
+  font-family: "Inter";
+  color: rgb(255, 255, 255);
+  font-weight: 400;
+  font-size: 20px;
+  text-decoration: none;
+}
+header .header-nav .header-link nav > ul li > a:hover {
+  color: rgb(190, 174, 130);
+}
+header .header-nav .header-link .burger {
+  display: none;
+}
+header .header-nav .header-link .switch-lng {
+  display: flex;
+  align-items: center;
+  width: 70px;
+}
+header .header-nav .header-link .switch-lng p {
+  font-family: "Inter";
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  font-size: 20px;
+  margin-right: 8px;
+}
+header .header-nav .header-link .switch-lng p:first-child {
+  color: rgb(190, 174, 130);
+  cursor: pointer;
+}
+header .header-nav .header-link .switch-lng p:last-child {
+  cursor: pointer;
+}
+header .header-nav .header-link .switch-lng .burger-menu {
+  display: none;
+}
+header .header-title {
+  width: 500px;
+  padding-top: 160px;
+  margin-left: 80px;
+  padding-bottom: 330px;
+}
+header .header-title h1 {
+  font-family: "Merriweather";
+  font-weight: 700;
+  font-size: 60px;
+  color: rgb(255, 255, 255);
+  line-height: 120px;
+  margin-bottom: 10px;
+}
+header .header-title p {
+  width: 470px;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  line-height: 40px;
+  margin-bottom: 25px;
+}
+header .popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(190, 174, 130, 0.3);
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.8s;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .popup .popup-content {
+  width: 450px;
+  height: 445px;
+  background-color: rgb(0, 0, 0);
+  padding: 30px;
+  position: relative;
+}
+header .popup .popup-content .popup-close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border-radius: 50%;
+  border: none;
+  background-color: rgb(190, 174, 130);
+  text-decoration: none;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  padding: 5px 10px;
+  cursor: pointer;
+}
+header .popup .popup-content .popup-close:hover {
+  color: rgb(255, 255, 255);
+}
+header .popup .popup-content h2 {
+  font-family: "Merriweather";
+  font-weight: 700;
+  font-size: 40px;
+  color: rgb(190, 174, 130);
+  line-height: 80px;
+  margin-bottom: 20px;
+}
+header .popup .popup-content form {
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+header .popup .popup-content form input {
+  height: 30px;
+  background-color: rgb(190, 174, 130);
+}
+header .popup .popup-content form input::-webkit-input-placeholder {
+  color: rgb(0, 0, 0);
+}
+header .popup .popup-content form input::-moz-placeholder {
+  color: rgb(0, 0, 0);
+}
+header .popup .popup-content form .message {
+  background-color: rgb(190, 174, 130);
+}
+header .popup .popup-content form .message::-moz-placeholder {
+  color: rgb(0, 0, 0);
+}
+header .popup .popup-content form .message::placeholder {
+  color: rgb(0, 0, 0);
+}
+header .popup.opened {
+  opacity: 1;
+  visibility: visible;
+}
+@media (max-width: 1100px) {
+  header .header-title {
+    padding-top: 100px;
+    padding-bottom: 200px;
+    width: 450px;
+  }
+  header .header-title p {
+    width: 420px;
+  }
+}
+@media (max-width: 890px) {
+  header .header-title {
+    padding-top: 100px;
+    padding-bottom: 200px;
+  }
+  header .header-title h1 {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 64px;
+    margin-bottom: 20px;
+  }
+  header .header-title p {
+    width: 390px;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 60px;
+  }
+}
+@media (max-width: 820px) {
+  header .container {
+    max-width: 650px;
+    margin: 0 auto;
+  }
+  header .container .header-link nav {
+    display: none;
+  }
+  header .container .header-link .burger {
+    display: none;
+    position: fixed;
+    width: 600px;
+    height: 100vh;
+    left: 248px;
+    top: 0;
+    right: 0;
+    background-color: rgb(0, 0, 0);
+  }
+  header .container .header-link .burger ul {
+    width: 170px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 120px;
+    margin-top: 130px;
+  }
+  header .container .header-link .burger ul .burger-menu-close {
+    display: none;
+    cursor: pointer;
+  }
+  header .container .header-link .burger ul li > a {
+    font-size: 35px;
+    line-height: 72px;
+    margin-bottom: 16px;
+    font-family: "Inter";
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    font-size: 20px;
+    text-decoration: none;
+  }
+  header .container .header-link .burger ul li > a:hover {
+    color: rgb(190, 174, 130);
+  }
+  header .container .header-link .burger ul .burger-menu-close {
+    position: absolute;
+    right: 64px;
+    top: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    border: none;
+  }
+  header .container .header-link .burger ul .burger-menu-close:hover {
+    color: rgb(190, 174, 130);
+  }
+  header .container .header-link .switch-lng {
+    width: 170px;
+    justify-content: space-between;
+  }
+  header .container .header-link .switch-lng p {
+    margin-right: 0;
+    text-align: center;
+  }
+  header .container .header-link .switch-lng .burger-menu {
+    display: block;
+  }
+  header .container .header-link .switch-lng .burger-menu:hover {
+    content: url(../img/hamburger_hover.svg);
+    cursor: pointer;
+  }
+  header .container .header-title {
+    padding-bottom: 170px;
+    margin-left: 0;
+  }
+}
+
+.portfolio {
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.portfolio .section-title {
+  display: flex;
+  align-items: center;
+  width: 700px;
+  padding-top: 100px;
+  margin-bottom: 60px;
+}
+.portfolio .section-title p {
+  font-family: "Merriweather";
+  font-weight: 700;
+  font-size: 40px;
+  color: rgb(190, 174, 130);
+}
+.portfolio .section-title .section-line {
+  color: rgb(190, 174, 130);
+  width: 245px;
+}
+.portfolio .section-button {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 895px;
+  margin-bottom: 60px;
+}
+.portfolio .section-button .btnclick.active {
+  background-color: rgb(190, 174, 130);
+  color: rgb(0, 0, 0);
+}
+.portfolio .portfolio-items {
+  display: grid;
+  grid-template-columns: repeat(3, 450px);
+  grid-template-rows: auto;
+  grid-gap: 25px;
+  margin-bottom: 10px;
+}
+.portfolio .portfolio-items img {
+  height: 560px;
+  cursor: zoom-in;
+}
+.portfolio .portfolio-items img:hover {
+  border: 2px solid rgb(190, 174, 130);
+}
+.portfolio .window-img {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(190, 174, 130, 0.701);
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.portfolio .window-img .popup-window {
+  position: relative;
+}
+.portfolio .window-img .popup-window .popup-close-img {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border-radius: 50%;
+  border: none;
+  background-color: rgb(190, 174, 130);
+  text-decoration: none;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.portfolio .window-img .popup-window .popup-close-img:hover {
+  color: rgb(255, 255, 255);
+}
+.portfolio .window-img .popup-window .bigfoto {
+  max-width: 600px;
+  height: 90vh;
+  cursor: zoom-out;
+}
+.portfolio .window-img.opened {
+  opacity: 1;
+  visibility: visible;
+}
+@media (max-width: 1440px) {
+  .portfolio .portfolio-items {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+@media (max-width: 970px) {
+  .portfolio .section-title {
+    width: 364px;
+  }
+  .portfolio .section-title p {
+    font-size: 32px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .portfolio .section-button {
+    width: 445px;
+  }
+  .portfolio .section-button button {
+    margin-bottom: 2%;
+  }
+}/*# sourceMappingURL=style.css.map */
