@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-nav">
+                <div class="logo">
+                    <a href="#"><img src="./img/logo.svg" alt="logo"></a>
+                </div>
+                <div class="header-link">
+                    <nav>
+                        <ul>
+                            <li><a href="#">Skills</a></li>
+                            <li><a href="#">Portfolio</a></li>
+                            <li><a href="#">Video</a></li>
+                            <li><a href="#">Price</a></li>
+                            <li><a href="#">Contactss</a></li>
+                        </ul>
+                    </nav>
+                    <section class="burger">
+                        <ul>
+                            <li><a href="#">Skills</a></li>
+                            <li><a href="#">Portfolio</a></li>
+                            <li><a href="#">Video</a></li>
+                            <li><a href="#">Price</a></li>
+                            <li><a href="#">Contactss</a></li>
+                            <button class="burger-menu-close">x</button>
+                        </ul>
+                    </section>
+                    <div class="switch-lng">
+                        <p>en</p>
+                        <p>/</p>
+                        <p>ru</p>
+                        <img class="burger-menu" src="./img/hamburger_unvisited.svg" alt="menu">
+                    </div>
+                </div>
+            </div>
+            <div class="header-title">
+                <h1>Alexa Rise</h1>
+                <p>Save sincere emotions, romantic feelings and happy moments of life together with professional photographer Alexa Rise</p>
+                <button class="btn" id="mod-btn">Hire me</button>
+            </div>
+        </div>
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <button class="popup-close">X</button>
+                <h2>Contact me</h2>
+                <form action="#" autocomplete="off" method="post" id="user-data">
+                    <input placeholder="E-mail" name = "email" type="text"  required>
+                    <input placeholder="Phone" name = "phone" type="tel"  required>
+                    <textarea class = "message" name="message" placeholder="Message" cols="30" rows="5" ></textarea>
+                    <input type="submit" value="Send message">
+                </form>
+            </div>
+    </header>
+    <section class="portfolio">
+        <div class="section-title">
+            <hr class="section-line">
+            <p>Portfolio</p>
+            <hr class="section-line">
+        </div>
+        <div class="section-button">
+            <button class="btnclick">Winter</button>
+            <button class="btnclick">Spring</button>
+            <button class="btnclick">Summer</button>
+            <button class="btnclick">Autumn</button>
+        </div>
+        <div class="portfolio-items">
+            <img class="fotoclick" src="./img/portfolio-img1.svg" alt="photo">
+            <img class="fotoclick" src="./img/portfolio-img2.svg" alt="photo">
+            <img class="fotoclick" src="./img/portfolio-img3.svg" alt="photo">
+            <img class="fotoclick" src="./img/portfolio-img4.svg" alt="photo">
+            <img class="fotoclick" src="./img/portfolio-img5.svg" alt="photo">
+            <img class="fotoclick" src="./img/portfolio-img6.svg" alt="photo">
+        </div>
+        <div class="window-img" id="win-img">
+            <div class="popup-window">
+                <img class="bigfoto" src="" alt="">
+                <button class="popup-close-img">X</button>
+            </div>
+        </div>
+    </section>
+    <script src="./script.js"></script>
+</body>
+</html>
+
