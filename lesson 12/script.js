@@ -20,11 +20,11 @@ class Shop {
         this.tittle = tittle;
         this.address = address;
     }
-}
+};
 
 
 const green = new Shop("Green", "ул. Петра Мстиславца 11, Минск");
 const prostore = new Shop("ProStore", "пр-т Дзержинского, 126, Минск");
 const shops = [green, prostore];
 const addresses = shops.map(shops => shops.address);
-console.log(addresses)
+console.log(addresses);
