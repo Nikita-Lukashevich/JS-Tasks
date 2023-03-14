@@ -1,0 +1,58 @@
+body {
+  background-color: rgb(255, 228, 196);
+}
+body header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+}
+body header nav > ul {
+  display: flex;
+  justify-content: space-around;
+  width: 200px;
+}
+body header nav > ul a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+}
+body header button {
+  height: 50px;
+  cursor: pointer;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 228, 196);
+}
+body section {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+body section div {
+  width: 300px;
+}
+body section div h2 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+body section div p {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.dark-theme {
+  background-color: rgb(0, 0, 0);
+}
+.dark-theme a {
+  color: rgb(255, 228, 196);
+}
+.dark-theme button {
+  background-color: rgb(255, 228, 196);
+  color: rgb(0, 0, 0);
+}
+.dark-theme section h2 {
+  color: rgb(255, 228, 196);
+}
+.dark-theme section p {
+  color: rgb(255, 228, 196);
+}/*# sourceMappingURL=style.css.map */

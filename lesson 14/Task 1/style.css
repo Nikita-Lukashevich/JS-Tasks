@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 10px;
+}
+
+.btn{
+    background-color: rgb(239,238,240);
+}
+
+.btn button{
+    border: none;
+    padding: 15px 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn button:hover{
+    background-color: rgb(198,196,198);
+}
+
+.btn button.active{
+    background-color: rgb(204, 204, 204);
+}
+
+.content{
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid rgb(204, 204, 204);
+    border-top: none;
+}
+
+.content.active{
+    display: block;
+}
