@@ -37,20 +37,20 @@
 
 // Разместить на странице несколько картинок. При клике на любую картинку она плавно становится на бэкграунд всей страницы, а тег картинки получает уникальные css-свойства (чтобы было понятно, что сейчас эта картинка является выбранным элементом). При перезагрузке страницы последнее выбранное состояние должно сохраниться, реализовать через LocalStorage.
 
-const img = document.querySelectorAll('.foto');
-const bg = document.querySelector('body');
+// const img = document.querySelectorAll('.foto');
+// const bg = document.querySelector('body');
 
 
-if (localStorage.getItem('bg-img')){
-    bg.style.backgroundImage = `url(${localStorage.getItem('bg-img')})`;
-}else{
-    bg.style.backgroundImage = `url(${img[1].getAttribute('src')})`;
-};
+// if (localStorage.getItem('bg-img')){
+//     bg.style.backgroundImage = `url(${localStorage.getItem('bg-img')})`;
+// }else{
+//     bg.style.backgroundImage = `url(${img[1].getAttribute('src')})`;
+// };
 
-for (let i = 0; i < img.length; i++) {
-    img[i].addEventListener("click", () => {
-        bg.style.backgroundImage = `url(${img[i].getAttribute('src')})`;
-        localStorage.setItem('bg-img', img[i].getAttribute('src'));
-    });
-}
-console.log(localStorage.getItem('bg-img'))
+// for (let i = 0; i < img.length; i++) {
+//     img[i].addEventListener("click", () => {
+//         bg.style.backgroundImage = `url(${img[i].getAttribute('src')})`;
+//         localStorage.setItem('bg-img', img[i].getAttribute('src'));
+//     });
+// }
+// console.log(localStorage.getItem('bg-img'))

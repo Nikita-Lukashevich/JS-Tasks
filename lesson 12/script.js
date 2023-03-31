@@ -15,16 +15,16 @@
 // ['ул. Петра Мстиславца 11, Минск', 'пр-т Дзержинского, 126, Минск']
 
 
-class Shop {
-    constructor (tittle, address) {
-        this.tittle = tittle;
-        this.address = address;
-    }
-};
+// class Shop {
+//     constructor (tittle, address) {
+//         this.tittle = tittle;
+//         this.address = address;
+//     }
+// };
 
 
-const green = new Shop("Green", "ул. Петра Мстиславца 11, Минск");
-const prostore = new Shop("ProStore", "пр-т Дзержинского, 126, Минск");
-const shops = [green, prostore];
-const addresses = shops.map(shops => shops.address);
-console.log(addresses);
+// const green = new Shop("Green", "ул. Петра Мстиславца 11, Минск");
+// const prostore = new Shop("ProStore", "пр-т Дзержинского, 126, Минск");
+// const shops = [green, prostore];
+// const addresses = shops.map(shops => shops.address);
+// console.log(addresses);
