@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.row{
+    justify-content: flex-start;
+    margin: 10px;
+}
+div .col{
+    padding: 0;
+    margin: 10px;
+    width: 25%;
+    border: 1px solid rgba(128, 128, 128, 0.2);
+}
+
+div img{
+    width: 100%;
+}
+
+h2, h4, p{
+    text-align: start;
+    margin-left: 15px;
+}
+
+h4, p{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.cardPeople::before{
+    content: '\1F46A';
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.cardLang::before{
+    content: '\1F5E3';
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+p::before{
+    content: '\1F4B0';
+    margin-right: 10px;
+}
+
+.head{
+    background-color: rgb(200, 198, 198);
+    font-size: 25px;
+    padding-left: 5px;
+}
