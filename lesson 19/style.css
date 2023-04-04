@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+}
+
+.list-group-item{
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.list-group-item:hover{
+    background-color: blue;
+    color: white;
+}
+
+.card h5{
+    font-size: 45px;
+}
+
+.card h6, p{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.card a{
+    font-size: 25px;
+}
