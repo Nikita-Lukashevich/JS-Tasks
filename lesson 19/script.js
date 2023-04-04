@@ -27,7 +27,8 @@ const cardcompany = document.querySelector('.card-company');
 const cardlink = document.querySelector('.card-link');
 
 async function f() {
-await fetch('https://jsonplaceholder.typicode.com/users')
+try{
+    await fetch('https://jsonplaceholder.typicode.com/users')
     .then((response) => response.json())
     .then((list) => {
         for(let i = 0; i < list.length; i++){
@@ -55,6 +56,9 @@ await fetch('https://jsonplaceholder.typicode.com/users')
             })
         })
     })
+    }catch{
+        alert('Error')
+    }
 }
 
 f();
