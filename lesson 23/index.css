@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: green;
+}
+
+.container{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box{
+    max-width: 700px;
+    margin-bottom: 20px;
+    background-color: yellow;
+}
+
+.label{
+    width: 700px;
+    line-height: 50px;
+    margin-left: 10px;
+    font-size: 25px;
+    cursor: pointer;
+    position: relative;
+}
+
+.label::after {
+    content: "+";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+    font-size: 25px;
+}
+
+.box.active .label::after {
+    content: "-";
+}
+
+.content{
+    position: relative;
+    overflow: hidden;
+    background-color: aliceblue;
+    max-height: 0;
+    transition: 0.3s; 
+}
+
+.content p {
+    font-size: 20px;
+    padding: 20px;
+  }
+
+.color-random, .color-linear, .color-radial{
+  height: 300px;
+}
+
+button{
+    content: 'Copy';
+    width: 200px;
+    height: 50px;
+    margin: 10px;
+    font-size: 20px;
+    border-radius: 15%;
+    border: none;
+    background-color: rgb(206, 201, 201);
+    color: rgb(4, 91, 15);
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgb(53, 52, 52);
+    color: whitesmoke;
+}

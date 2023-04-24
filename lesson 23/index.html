@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Проект на JS</title>
+</head>
+<body>
+    <div class="container">
+      <div id="one" class="box">
+        <div class="label">Рандомный Цвет</div>
+        <div class="content">
+          <p>
+            JS:<br>
+            function getColorRandom(){ <br>
+            const color = `rgb(${Math.round((Math.random()*256))}, ${Math.round((Math.random()*256))}, ${Math.round((Math.random()*256))})`;<br>
+            return color;<br>}
+          </p>
+          <div class="color-random"></div>
+        </div>
+      </div>
+      <div id="two" class="box">
+        <div class="label">Линейный градиент</div>
+        <div class="content">
+          <p>
+            JS:<br>
+            function getColorLinear(){ <br>
+            const color = `linear-gradient(${Math.round((Math.random()*256))}0%, ${Math.round((Math.random()*256))}50%, ${Math.round((Math.random()*256))}51%, ${Math.round((Math.random()*256))}100%)`;<br>
+            return color;<br>}
+          </p>
+          <div class="color-linear"></div>
+        </div>
+      </div>
+      <div id="three" class="box">
+        <div class="label">Радиальный градиент</div>
+        <div class="content">
+          <p>
+            JS:<br>
+            function getColorRadial(){ <br>
+            const color = `radial-gradient(${Math.round((Math.random()*256))}, ${Math.round((Math.random()*256))}, ${Math.round((Math.random()*256))})`;<br>
+            return color;<br>}
+          </p>
+          <div class="color-radial"></div>
+        </div>
+      </div>
+    <div>
+    <script src="./index.js"></script>
+</body>
+</html>
