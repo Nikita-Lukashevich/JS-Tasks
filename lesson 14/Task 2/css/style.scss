@@ -1,0 +1,64 @@
+$color1: rgb(255, 228, 196);
+$color2: rgb(0, 0, 0);
+$color3: rgb(255, 255, 255);
+
+body{
+    background-color: $color1;
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10px;
+        nav>ul{
+            display: flex;
+            justify-content: space-around;
+            width: 200px;
+            a{
+                text-decoration: none;
+                color: $color2;
+                font-size: 20px;
+            }
+        }
+        button{
+            height: 50px;
+            cursor: pointer;
+            background-color: $color2;
+            color: $color1;
+        }
+    }
+    section{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 50px;
+        div{
+            width: 300px;
+            h2{
+                font-size: 40px;
+                margin-bottom: 10px;
+            }
+            p{
+                font-size: 20px;
+                line-height: 1.5;
+            }
+        }
+    }
+}
+
+.dark-theme{
+    background-color: $color2;
+    a{
+        color: $color1;
+    }
+    button{
+        background-color: $color1;
+        color: $color2;
+    }
+    section{
+        h2{
+            color: $color1;
+        }
+        p{
+            color: $color1;
+        }
+    }
+}
