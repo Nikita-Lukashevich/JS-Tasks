@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.window{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 800px;
+    height: 400px;
+    border-radius: 2%;
+    background-color: rgb(4, 158, 71);
+}
+
+.exchange{
+    width: 600px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+select{
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+input, select{
+    height: 50px;
+    width: 200px;
+    font-size: 20px;
+}
+
+.selLeft, .selRight{
+    text-align: center;
+}
+
+button{
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: grey;
+    color: aliceblue;
+}
